@@ -3,5 +3,6 @@
   "version": "0.0.1",
   "description": "A shim library, with fallbacks for IE9, to make simple header-less GET
 cors calls returning a json object.",
-  "main": "simplecors.js"
+  "main": "simplecors.js",
+  "authors": ["Christopher E. Walker"]
 }
