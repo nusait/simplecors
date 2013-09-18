@@ -36,8 +36,8 @@ define(['jquery'], function($) {
 
             return deferred.promise();
         },
-        IE9CORS: function() {
-            console.log('IE9CORS');
+        IE9CORS: function(args) {
+
             var
                 deferred = new $.Deferred(),
                 xdr = new XDomainRequest();
@@ -50,7 +50,7 @@ define(['jquery'], function($) {
                     JSON.parse(xdr.responseText);
                 deferred.resolve(data);
             };
-            xdr.open('get', this.postsUrl);
+            xdr.open('get', args.url);
             xdr.send();
 
             return deferred.promise();
